@@ -1,0 +1,44 @@
+#Write a program to test for basic data types , arrays ,strings ,string arrays and custom objects
+
+package Assesement2;
+
+import java.util.Arrays;
+
+public class Basics {
+    void dataTypes(){
+        System.out.println("Bank details");
+        int accNum=987654321;
+        String name="Divya";
+        double Bal=10000.50;
+        String password="242418";
+        System.out.println("Account Number: "+accNum);
+        System.out.println("Name :"+name);
+        System.out.println("Balance"+Bal);
+        System.out.println("password"+password);
+    }
+    void Arrays(){
+        System.out.println("vowels:");
+        char[]a={'a','e','i','o','u'};
+        for(int i=0;i<a.length;i++){
+            System.out.println(a[i]);
+        }
+    }
+    void string(){
+        String str=new String(" Zoho ");
+        System.out.println("upperCase:"+str.toUpperCase());
+        System.out.println("length :"+str.length());
+        System.out.println("removing white Spaces&length:"+str.trim().length());
+    }
+    void stringArray(){
+        String a[]={"oppo","vivo","realMe","onePlus","moto"};
+        System.out.println("mobile names:"+ Arrays.toString(a));
+    }
+    public static void main(String args[]){
+        Basics o=new Basics();
+        o.dataTypes();
+        o.Arrays();
+        o.string();
+        o.stringArray();
+
+    }
+}
